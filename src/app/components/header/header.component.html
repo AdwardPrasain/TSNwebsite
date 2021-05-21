@@ -1,0 +1,56 @@
+<div class="header" [class.headerscroll] = "headercheck">
+  <div class="logo head">
+      <p>Logo</p>  
+  </div>
+ 
+  <div class="nav-list" [class.navactive] ="check">
+    <div class="home head lowidth" (click)="hidenav()">
+      <a href="#home"> 
+        <p>Home</p>
+      </a>
+      <div class="line">    
+      </div>
+    </div>
+
+    <div class="about head lowidth" (click)="hidenav()">
+      <a href="#about"> 
+        <p>About</p>
+      </a>
+      <div class="line">    
+      </div>
+    </div>
+    
+    <div class="services head hwidth" (click)="hidenav()">
+      <a href="#service"> 
+        <p>Services</p>
+      </a>
+      <div class="line extendedline">    
+      </div>
+    </div>
+
+    <div class="products head hwidth" (click)="hidenav()">
+      <a href="#product"> 
+        <p>Products</p>
+      </a>
+      <div class="line extendedline">    
+      </div>
+    </div>
+
+    <div class="contact head hwidth" (click)="hidenav()">
+      <a href="#contact"> 
+        <p>Contact</p>
+      </a>
+      <div class="line extendedline">    
+      </div>
+    </div>
+    <div class="offer head hwidth" (click)="hidenav()">
+      <a href="#offer"> 
+        <p>Offers</p>
+      </a>
+    </div>
+  </div>
+  <div class='hamburger' [class.active] ="check" (click)="navToggle()">
+    <div class="bar">  
+    </div>
+    </div>
+</div>

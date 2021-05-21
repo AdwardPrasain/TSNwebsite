@@ -1,0 +1,193 @@
+.services {
+    text-align: center;
+    margin-top: -20px;
+    padding: 30px 30px;
+    transform: scale(.9);
+    opacity: 0;
+    transition: 1s all linear;
+  }
+  .servicescroll{
+    transform: scale(1);
+    opacity: 1;
+  }
+  .service-items{
+    display: flex;
+  }
+  .service-item {
+    height: 42vh;
+    width: 35vw;
+    display: flex;
+    justify-content:left;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url("../../../assets/images/Services.jpg");
+    background-size: cover;
+    margin: 10px 1%;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px grey;
+    transition: .3s all linear;
+  }
+  .service-item:hover{
+    box-shadow: 1px 1px 5px grey; 
+   }
+.service-item::after {
+    position: absolute;
+    content: "";
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+  }
+
+.service-item h2 {
+    font-size: 1.5rem;
+    color:#220187;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+.service-item p {
+    font-size: 16px;
+    font-weight: 525;
+    color: black;
+    text-align: center;
+    justify-content: justify;
+    word-spacing: 6px;
+    letter-spacing: .5px;
+  }
+.readmore{
+      display: block;
+      color: #4f0080;
+      cursor: pointer;
+  }
+.more{
+    display: none;
+}
+.opacity{
+  opacity: 0.4;
+}
+.opacityactive{
+opacity: 1;
+}
+
+.moreactive{
+    display: block;
+}
+
+@media only screen and (max-width: 1600px) {
+  .readmoreUpME, .readmoreUpPIS{
+    display: none;
+    }
+    .svactiveME{
+      height: 58vh;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+  .service-item{
+    height: 52vh;
+    width: 38vw;
+   }
+   .svactiveME{
+    height: 67vh;
+  }
+  .readmoreUpME{
+    display: none;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .service-items{
+    flex-wrap: wrap;
+  }
+  .service-item{
+    height: 18vh;
+    width: 37vw;
+   
+   }
+   .svactiveME{
+    height: 23vh;
+  }
+  .readmoreUpME, .readmoreUpPIS{
+    display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .service-items{
+    flex-wrap: wrap;
+  }
+  .service-item{
+    height: 27vh;
+    width: 37vw;
+   
+   }
+   .svactiveME{
+    height: 35vh;
+  }
+  .readmoreup{
+    display: none;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .section-title{
+    font-size: 2rem;
+  }
+  .service-items{
+    flex-wrap: wrap;
+  }
+  .service-item{
+    height: 15vh;
+    width: 100vw;
+   
+   }
+.opacity{
+  opacity: 1;
+}
+.more{
+  display: block;
+}
+.readmore{
+  display: none;
+}
+
+/* for ME */
+.readmoreUpME{
+display: block;
+color: #4f0080;
+}
+.detailsME{
+  display: none;
+}
+.detailsactiveME{
+  display: block;
+}
+.svactiveME{
+  height: 67vh;
+}
+
+/* For PIS */
+.readmoreUpPIS{
+  display: block;
+  color: #4f0080;
+  }
+  .detailsPIS{
+    display: none;
+  }
+  .detailsactivePIS{
+    display: block;
+  }
+  .svactivePIS{
+    height: 52vh;
+  }
+
+  /* For WEBSITE */
+
+
+}
+
+  

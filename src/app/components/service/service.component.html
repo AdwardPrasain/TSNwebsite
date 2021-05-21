@@ -1,0 +1,68 @@
+<div class="services" id="service" [class.servicescroll]="servicecheck">
+      <div class="section-title">Serv<span>i</span>ces</div>
+
+      <div class="service-items">
+      <div class="service-item" [class.svactiveME]="svcheckME">
+        <h2>Municipal ERP</h2>
+        <p>
+          <span class="readmoreUpME" (click)="toggleMoreUpME()">Read{{text}}....</span>
+          <span class="detailsME" [class.detailsactiveME] ="detailscheckME">
+            Enterprise Resource Planning system for Local Government bodies that
+            includes all Wards, Municipalities, Sub-metropolitans and
+            metropolitans across the country. This system is made up of latest
+            technologies and designed to provide easy, faster and hassle free
+            service 
+         
+          <span class="opacity" [class.opacityactive]= "opcheck">through the local bodies with implementation of proper data</span>
+          <span class="more" [class.moreactive]="check">
+             security and safety. It help manage
+            day to day fucntions like Land Taxation,Revenue Taxation, Company
+            Registration,Inventory Management, Planning Management and so on.
+          </span>
+          <span class="readmore" (click)="toggleMore()">Read{{text}}....</span>
+        </span>
+        </p>
+      </div>
+      <div class="service-item" [class.svactivePIS] ="svcheckPIS">
+        <h2>PIS</h2>
+        <p>
+          <span class="readmoreUpPIS" (click)="toggleMoreUpPIS()">Read{{textPIS}}....</span>
+          <span class="detailsPIS" [class.detailsactivePIS] ="detailscheckPIS">      
+          PIS is a centralized Personal Information System designed to manage
+          personal records, documents, transfers, office records and other
+          essential data about Civil Services Personnel and Private
+          Organizations. Province 1 Finance Comptroller Office, Local
+          Governmental Bodies and other Government Offices uses PIS to automate
+          the personal administration.
+        </span>
+        </p>
+      </div>
+      <div class="service-item" [class.svactivePIS] = "svcheckWD">
+        <h2>Website Development</h2>
+        <p>
+          <span class="readmoreUpPIS" (click)="toggleMoreUpWD()">Read{{textWD}}....</span>
+          <span class="detailsPIS" [class.detailsactivePIS] ="detailscheckWD"> 
+          Website Development for different private and government bodies with
+          CMS to facilitate our clients to provide their service and information
+          through internet accesible by multiple users. Website and Member
+          Database for Rotary International District 3292 has been managed with
+          secured and fast system.
+          </span>
+        </p>
+      </div>
+      <div class="service-item" [class.svactivePIS] = "svcheckMD">
+        <h2>Mobile App Development</h2>
+        <p>
+          <span class="readmoreUpPIS" (click)="toggleMoreUpMD()">Read{{textMD}}....</span>
+          <span class="detailsPIS" [class.detailsactivePIS] = "detailscheckMD">
+            Mobile app development for portable, easily accesible and user
+            friendly way of providing business services with extensive range of
+            functions like Database connectivity , API connection, UI/UX and
+            Database requiered for complete development of app. Provided services
+            to business and private organizations.
+          </span>
+        </p>
+      </div>
+  </div>
+  </div>
+

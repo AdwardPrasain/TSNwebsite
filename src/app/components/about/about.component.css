@@ -1,0 +1,266 @@
+.about{
+  margin: 20px auto;
+  padding: 30px 0px;
+  transform: scale(.9);
+  transition: 1s all linear;
+  opacity: 0;
+}
+.aboutscroll{
+  transform: scale(1);
+  opacity: 1;
+}
+.aboutmain {
+  margin-top: 14px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-image: url("../../../assets/images/about2.jpg");
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px grey;
+  transition: 0.3s all linear;
+}
+
+.aboutmain::after {
+  position: absolute;
+  content: "";
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  z-index: -1;
+}
+.abouttext {
+  margin: 0 auto;
+  width: 70vw;
+  font-size: 1.3rem;
+}
+.abouttext p {
+  text-align: center;
+  letter-spacing: 2px;
+}
+.cname {
+  font-size: 1.5rem;
+}
+
+.values {
+  position: relative;
+  height: 60vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  padding-left:10px;
+}
+
+.valuesleft h2 {
+  word-spacing: 2px;
+  width: 20vw;
+  height: 40vh;
+  font-size: 4rem;
+  color: #4f0280;
+  /* border:1px solid black; */
+}
+.valuesright {
+  display: flex;
+  margin-left: 2rem;
+  padding: 20px;
+}
+.valuesright .valueitem {
+  width: 200px;
+  height: 300px;
+  margin-top: 30px;
+  margin-left: 20px;
+  align-content: center;
+  letter-spacing: 1.5px;
+}
+.valuesright .valueitem img {
+  box-shadow: 1px 1px 10px grey;
+  border-radius: 30%;
+}
+.wave {
+  position: absolute;
+  top: 17rem;
+  right: 0px;
+  left: 0px;
+}
+
+.clients{
+height: 200px;
+margin-top:20px;
+text-align:center;
+justify-content: center;
+box-shadow: 5px 5px 10px grey;
+}
+
+.clienttitle{
+font-size: 30px;
+
+}
+
+.clientbody{
+    margin-top: -20px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.5);
+}
+
+.items{
+    margin-left: 50px;
+}
+.items img{
+    border-radius: 10%;
+}
+
+
+
+@media only screen and (max-width: 1600px) {
+
+}
+
+@media only screen and (max-width: 1280px) {
+ 
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+.abouttext {
+    margin: 0 auto;
+    width: 70vw;
+    font-size: 1.3rem;
+  }
+.cname {
+  font-size: 1.2rem;
+}
+.texth {
+  color: crimson;
+}
+.values {
+  position: relative;
+  height: 43vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.valuesleft h2 {
+  word-spacing: 1px;
+  width: 10vw;
+  height: 20vh;
+  font-size: 2rem;
+  color: #4f0280;
+  /* border:1px solid black; */
+}
+.valuesright {
+  display: flex;
+  margin-left: 2rem;
+  padding: 10px;
+}
+.valuesright .valueitem {
+  width: 180px;
+  height: 300px;
+  letter-spacing: 1.2px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .abouttext {
+    width: 90vw;
+    font-size: 1rem;
+  }
+.cname {
+  font-size: 1.1rem;
+}
+.texth {
+  color: crimson;
+}
+.values {
+  height: 35vh;
+}
+
+.valuesleft h2 {
+  word-spacing: .5px;
+  width: 5vw;
+  height: 20vh;
+  font-size: 1.4rem;
+  color: #4f0280;
+}
+.valuesright {
+  display: flex;
+  margin-left: 3rem;
+  padding: 5px;
+}
+.valuesright .valueitem {
+  width: 140px;
+  letter-spacing: 1px;
+}
+.wave {
+  top: 19rem;
+}
+
+
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .section-title{
+    font-size: 2rem;
+  }
+  .abouttext p {
+    letter-spacing: .5px;
+  }
+.abouttext {
+    width: 95vw;
+    font-size: .7rem;
+    word-spacing: 0px;
+  }
+.cname {
+  font-size: .6rem;
+}
+.values {
+  height: 45vh;
+flex-direction: column;
+}
+
+.valuesleft h2 {
+  margin: 0 auto;
+  width: 50vw;
+  height: 3vh;
+  font-size: 1rem;
+}
+.valuesright {
+  display: flex;
+  margin-left: -1rem;
+  padding: 1px;
+}
+.valuesright .valueitem {
+  width: 100px;
+  letter-spacing: 0px;
+}
+
+.valueitem img{
+  transform: scale(.5);
+}
+.valueitem h3, p{
+  font-size: 10px;
+}
+.wave {
+  top: 18rem;
+}
+
+.clients{
+  height: 130px;
+  margin-top:10px;
+  }
+  
+  .clienttitle{
+  font-size: 20px;
+  }
+  
+  .clientbody{
+      margin-top: -20px;
+      height: 150px;
+      transform: scale(0.3);
+  }
+}

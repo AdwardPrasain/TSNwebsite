@@ -1,0 +1,242 @@
+.main {
+    min-height: 900px;
+    background-image: linear-gradient(60deg, #220186, #4f0280);
+    color: white;
+    display: block;
+    margin-top: 0;
+    overflow-x: hidden;
+    box-shadow: 5px 5px 10px grey;
+  }
+
+  .text {
+    padding-top: 15%;
+    padding-left: 10%;
+  }
+  
+  .message {
+    height: 10%;
+    width: 30%;
+    font-weight: 500;
+    font-size: 3rem;
+  }
+  
+  .details {
+    width: 30%;
+  }
+  
+  .servicebtn {
+    width: 12%;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #4f0280;
+    opacity: 0.7;
+    border-radius: 10px;
+    transition: 1s linear;
+    transition-property: all;
+    color: white;
+  }
+  
+  .servicebtn:hover {
+    opacity: 1;
+  }
+
+  @keyframes laptopanimate {
+    0%{ margin-left: 70rem;opacity: .5;}
+    100%{ margin-left: 20rem; opacity:1;}
+  }
+
+  .right {
+    width: 60%;
+    height: 500px;
+    margin-top: -430px;
+    z-index: -1;
+    margin-left: 30rem;
+  }
+  
+  .laptop {
+    margin-left: 20rem;
+    margin-top: 7rem;
+    animation: laptopanimate 2s ease;
+  }
+  
+  @keyframes animate {
+    from {
+      box-shadow: 2px 2px 0px white;
+      opacity: 0.5;
+    }
+    to {
+      box-shadow: 2px 2px 15px white;
+      opacity: 1;
+    }
+  }
+  
+  .web {
+    border-radius: 50%;
+    position: relative;
+    bottom: 350px;
+    left: 18rem;
+    box-shadow: 2px 2px 1px white;
+    animation: animate 1s 1;
+    animation-delay: 2s;
+  }
+  
+  .android {
+    position: relative;
+    bottom: 252px;
+    left: 10rem;
+    box-shadow: 2px 2px 1px white;
+    border-radius: 50%;
+    animation: animate 1s 1;
+    animation-delay: 3s;
+  }
+  
+  .ios {
+    position: relative;
+    bottom: 135px;
+    left: 6rem;
+    box-shadow: 2px 2px 1px white;
+    border-radius: 50%;
+    animation: animate 1s 1;
+    animation-delay: 4s;
+  }
+  
+  .windows {
+    position: relative;
+    bottom: 25px;
+    left: 6rem;
+    box-shadow: 2px 2px 1px white;
+    border-radius: 50%;
+    animation: animate 1s 1;
+    animation-delay: 5s;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .main {
+      min-height: 675px;
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    .main {
+      min-height: 630px;
+      background-image: linear-gradient(to right, #220188, #4e0080);
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    .main {
+      min-height: 230px;
+    }
+    .text{
+      width: 90%;
+      padding-top: 5%;
+      padding-left: 15%;
+    }
+    .right {
+      height: 500px;
+      margin-top: -350px;
+      z-index: -1;
+      margin-left: 30rem;
+    }
+ 
+    .right .laptop{
+      display: none;
+    }
+
+    .web {
+      bottom: -150px;
+      left: 18rem;
+   
+    }
+    
+    .android {
+      bottom: -220px;
+      left: 14rem;
+    }
+    
+    .ios {
+      bottom: -290px;
+      left: 10rem;
+    }
+
+    
+    .windows {
+      bottom: -360px;
+      left: 6rem;
+    }
+  
+    .message {
+      width: 50%;
+      font-weight: 400;
+      font-size: 2rem;
+    }
+    
+    .details {
+      width: 60%;
+    }
+    
+    .servicebtn {
+      width: 17%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .main {
+      min-height: 300px;
+      overflow-x: hidden;
+    }
+    .text{
+      width: 100%;
+      padding-top: 7%;
+      padding-left: 20vw;
+    }
+    .right{
+      display: none;
+    }
+  
+    .message {
+      width: 80%;
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+    
+    .details {
+      width: 80%;
+    }
+    
+    .servicebtn {
+      width: 20%;
+    }
+    
+  }
+  
+  @media (min-width: 300px) and (max-width: 767px) {
+    .main {
+      min-height: 350px;
+      overflow-x: hidden;
+    }
+    .text{
+      width: 100%;
+      padding-top: 12%;
+      padding-left: 7%;
+    }
+    .right{
+      display: none;
+    }
+  
+    .message {
+      width: 80%;
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+    
+    .details {
+      width: 80%;
+    }
+    
+    .servicebtn {
+      width: 35%;
+    }
+  }
+  

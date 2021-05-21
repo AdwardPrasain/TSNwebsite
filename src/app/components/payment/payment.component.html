@@ -1,0 +1,44 @@
+<div class="payments">
+  <div class="section-title">Pay<span>m</span>ent</div>
+  <h2>Our online payment portals</h2>
+  <div class="mainpayment">
+    <div class="code esewa" [class.esewaactive] = "esewacheck">
+      <p>Scan the Code with eSewa app</p>
+        <img src="../../../assets/images/paycode1.png" alt="" >
+        <h3 (click)="esewanone()">Done</h3>
+    </div>
+
+    <div class="code khalti" [class.khaltiactive] = "khalticheck">
+      <p>Scan the Code with Khalti app</p>
+      <img src="../../../assets/images/paycode2.gif" alt="" >
+      <h3 (click)="khaltinone()">Done</h3>
+  </div>
+    
+    <div class="items" (click)="esewablock()">
+      <img
+        src="../../../assets/images/payment1.jpg"
+        alt=""
+        width="200px"
+        height="150px"
+      />
+    </div>
+    <div class="items" (click)="khaltiblock()">
+      <img
+        src="../../../assets/images/payment2.jpg"
+        alt=""
+        width="200px"
+        height="150px"
+      />
+    </div>
+    <div class="items">
+      <img
+        src="../../../assets/images/payment3.jpg"
+        alt=""
+        width="200px"
+        height="150px"
+      />
+    </div>
+  </div>
+
+
+</div>
